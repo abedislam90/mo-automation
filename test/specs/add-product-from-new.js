@@ -17,7 +17,7 @@ describe('add product from new', () => {
 	it ('should add the first product, any size', () => {
 		browser.getUrl().should.contain('new');
 		$$('.product_cell_wrapper')[0].moveTo();
-		$("#specific_product_size-278420").click();
+		$$(".specific_product_sizes")[0].click();
 		$('.add_to_bag_button').click();
 		browser.pause(4000)
 	})
@@ -29,3 +29,4 @@ describe('add product from new', () => {
 	});
 
 });
+
